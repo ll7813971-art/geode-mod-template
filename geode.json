@@ -1,15 +1,14 @@
 {
-  "geode": "4.0.0",
+  "geode": "3.3.0",
   "version": "1.0.0",
-  "id": "ll7813971.artartir.mobilemod",
+  "id": "artartir.mobilemod",
   "name": "Artartir Mobile Mod",
   "developer": "Artartir",
-  "description": "Mod base personalizado para Geometry Dash en Android.",
-  "repository": "https://github.com/ll7813971-art/geode-mod-template",
+  "description": "Mod personalizado funcional para Geometry Dash en Android",
   "settings": {
     "show-message": {
-      "name": "Mostrar mensaje de carga",
-      "description": "Muestra un mensaje cuando el mod se carga.",
+      "name": "Mostrar Mensaje",
+      "description": "Mostrar mensaje de carga al abrir el menú",
       "type": "bool",
       "default": true
     }

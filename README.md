@@ -1,31 +1,77 @@
 # Artartir Mobile Mod
 
-Mod base personalizado para **Geometry Dash + Geode**, preparado para Android.
+Mod personalizado para **Geometry Dash + Geode** en Android.
 
-## Descargar
+## 📥 Descargar
 
-Este repositorio contiene el código fuente. Puedes descargarlo como ZIP desde:
+1. Ve a: https://github.com/ll7813971-art/geode-mod-template
+2. Toca el botón verde **Code**
+3. Selecciona **Download ZIP**
+4. Se descargará: `geode-mod-template-main.zip`
 
-**Code → Download ZIP**
+## 📱 Instalar en Móvil
 
-El archivo `.geode` es un binario compilado y no puede generarse directamente desde GitHub sin ejecutar el SDK de Geode. Para instalarlo en el móvil, primero compílalo siguiendo `ANDROID.md`.
+Este ZIP contiene el código fuente. Para instalarlo en Geometry Dash:
 
-## Qué hace
+1. Descarga el ZIP en una **PC**
+2. Extrae la carpeta
+3. Compila con: `geode build`
+4. Se generará un archivo `ArtartirMobileMod.geode`
+5. Copia ese archivo al móvil en:
+   ```
+   Android > media > com.geode.launcher > game > geode > mods
+   ```
+6. Abre Geometry Dash
+7. El mod aparecerá en la lista de Geode ✅
 
-- Se identifica como **Artartir Mobile Mod**.
-- Muestra un mensaje al abrir el menú principal.
-- Incluye una opción para desactivar el mensaje desde la configuración de Geode.
-- No requiere tu cuenta ni tu contraseña de Geometry Dash.
+## 📋 Archivos del Proyecto
 
-## Compilar para Android
+- `geode.json` - Configuración del mod
+- `CMakeLists.txt` - Script de compilación
+- `src/Main.cpp` - Código fuente
+- `.gitignore` - Archivos ignorados
 
-Consulta [ANDROID.md](ANDROID.md). Necesitarás una computadora con el Geode SDK y el Android NDK; el teléfono por sí solo no puede compilar este mod mediante este repositorio.
+## ⚙️ Configuración
 
-## Instalar en Android
+Edita `geode.json` para:
+- Cambiar el nombre
+- Agregar más opciones
+- Modificar la descripción
 
-1. Compila el archivo `ArtartirMobileMod.geode`.
-2. Pásalo al móvil mediante USB, Drive o Telegram.
-3. Abre Geode y usa **Install mod from file**, o copia el archivo en la carpeta de mods de Geode.
-4. Reinicia Geometry Dash.
+## 🔧 Compilación
 
-El mod es personalizable, pero cualquier persona que obtenga el archivo podrá instalarlo. No pongas contraseñas ni datos privados dentro del proyecto.
+En una PC con Geode SDK:
+
+```bash
+geode build
+```
+
+O con CMake:
+
+```bash
+cmake -B build
+cmake --build build --config Release
+```
+
+## 📍 Instalación Manual en Android
+
+Una vez compilado el `.geode`:
+
+1. Abre tu gestor de archivos (Files, ZArchive, etc.)
+2. Ve a: `Android/media/com.geode.launcher/game/geode/mods/`
+3. Pega el archivo `ArtartirMobileMod.geode`
+4. Reinicia Geometry Dash
+
+## ✅ Verificar Instalación
+
+- Abre Geometry Dash
+- Ve a Configuración > Mods
+- Verifica que "Artartir Mobile Mod" aparezca en la lista
+- Habilitalo si está desactivado
+- ¡Disfruta! 🎮
+
+---
+
+**Creado para: Artartir**
+**Versión: 1.0.0**
+**Compatible con: Geode 3.3.0+**
